@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Es_adozione_Blagojevic</title>
+        <script defer src="dist/main.js"></script>
+    </head>
+    <body>
+        <h1>Adotta un Animale</h1>
+        <div>
+            <label for="nome">Inserisci il nome dell'animale:</label>
+            <input type="text" id="nome">
+            <br><br>
+        </div>
+        <div>
+            <label for="specie">Seleziona la specie:</label>
+            <select id="specie" name="specie">
+                <option name="specie" value="">Scegli la specie</option>
+                <option name="specie" value="gatto">Gatto</option>
+                <option name="specie" value="cane">Cane</option>
+                <option name="specie" value="coniglio">Coniglio</option>
+            </select>
+            <br><br>
+        </div>
+        <div>
+            <p>Seleziona la taglia:</p>
+            <input type="radio" id="piccolo" name="taglia" value="piccolo">
+            <label for="piccolo" >Piccolo</label>
+            <br>
+            <input type="radio" id="medio" name="taglia" value="medio">
+            <label for="medio" >Medio</label>
+            <br>
+            <input type="radio" id="grande" name="taglia" value="grande">
+            <label for="grande" >Grande</label>
+            <br><br>
+        </div>
+        <div>
+            <label for="eta">Inserisci l eta dell animale</label>
+            <input id="eta" type="number" min="0" max="20" >
+            <br><br>
+        </div>
+        <div>
+            <label for="vaccinato">Vaccinato:</label>
+            <input type="checkbox" id="vaccinato" >
+            <br><br>
+        </div>
+        <div>
+            <button onclick="registra()" id="registra">Registra</button>
+        </div>
+        <div>
+            <p id="messaggio"></p>
+            <br>
+        </div>
+        <div>
+            <img id="immagine" src="" alt="" width="200">
+        </div>
+        <div>
+            <h1>Elenco-Pronti</h1>
+            <ul id="elenco-pronti">
+            </ul>
+        </div>
+        <div>
+            <h1>Elenco-Attesa</h1>
+            <ul id="elenco-attesa">
+            </ul>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Contatore numero cani:</th>
+                    <td id="conta-cani"></td>
+                </tr>
+                <tr>
+                    <th>Contatore numero conigli:</th>
+                    <td id="conta-conigli"></td>
+                </tr>
+                <tr>
+                    <th>Contatore numero gatti:</th>
+                    <td id="conta-gatti"></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p id="piu-ospitata"></p>
+            <p id="posti">Posti liberi: 6</p>
+        </div>
+    </body>
+</html>
